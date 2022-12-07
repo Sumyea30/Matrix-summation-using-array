@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+
+int main()
+{
+    int i,j,sum=0;
+    int m,n;
+    int key;
+
+    printf("Enter rows and coloums : \n");
+    scanf("%d%d",&m,&n);
+
+    int A[m][n];
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++){
+            printf("A[%d][%d]: ",i,j);
+            scanf("%d",&A[m][n]);
+        }
+    }
+
+   printf("Enter a column : ");
+   scanf("%d",&key);
+
+   for(j=key,i=0;i<m;i++)
+  {
+    sum=sum+A[m][n];
+  }
+   printf("Summation : %d",sum);
+
+    return 0;
+}
+
+
